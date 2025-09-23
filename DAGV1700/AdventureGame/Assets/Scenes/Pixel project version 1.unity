@@ -291,7 +291,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 706818852727650393, guid: 705ded09cf1c16342b66b14d7d587cad, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.005453
+      value: 8.553453
       objectReference: {fileID: 0}
     - target: {fileID: 706818852727650393, guid: 705ded09cf1c16342b66b14d7d587cad, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1305,7 +1305,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 706818852727650393, guid: 705ded09cf1c16342b66b14d7d587cad, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.977683
+      value: 7.525683
       objectReference: {fileID: 0}
     - target: {fileID: 706818852727650393, guid: 705ded09cf1c16342b66b14d7d587cad, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2483,7 +2483,7 @@ Transform:
   m_GameObject: {fileID: 1030961437}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.21, y: 0.537, z: 0}
+  m_LocalPosition: {x: 2.3470001, y: 0.537, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -8152,7 +8152,7 @@ Transform:
   m_GameObject: {fileID: 1303945140}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.474, y: 2.724, z: 0}
+  m_LocalPosition: {x: 8.021999, y: 2.724, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8173,7 +8173,19 @@ MonoBehaviour:
   id: {fileID: 11400000, guid: 64c59e812861147a88d9e55a69834e31, type: 2}
   matchEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1303945140}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   noMatchEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -13317,7 +13329,7 @@ Transform:
   m_GameObject: {fileID: 1386995038}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.368, y: 0.537, z: 0}
+  m_LocalPosition: {x: 1.505, y: 0.537, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -24283,7 +24295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleCharacterController
   moveSpeed: 8
-  jumpForce: 2
+  jumpForce: 1.25
   gravity: -8
 --- !u!143 &1966741313
 CharacterController:
