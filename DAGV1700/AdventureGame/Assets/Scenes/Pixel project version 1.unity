@@ -402,12 +402,12 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: -0.1
+            m_FloatArgument: -0.5
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 442855551}
-          m_TargetAssemblyTypeName: SimpleImageBehaviour, Assembly-CSharp
+        - m_Target: {fileID: 442855553}
+          m_TargetAssemblyTypeName: Death, Assembly-CSharp
           m_MethodName: UpdateWithFloatData
           m_Mode: 1
           m_Arguments:
@@ -10664,18 +10664,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 442855551}
-        m_TargetAssemblyTypeName: SimpleImageBehaviour, Assembly-CSharp
-        m_MethodName: UpdateWithFloatData
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: -0.1
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 304519934}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -10916,7 +10904,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerExitMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -10928,7 +10916,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 442855553}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -10967,7 +10955,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: SimpleImageBehaviour, Assembly-CSharp
+      value: Death, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
@@ -11161,6 +11149,7 @@ GameObject:
   - component: {fileID: 442855551}
   - component: {fileID: 442855552}
   - component: {fileID: 442855553}
+  - component: {fileID: 442855554}
   m_Layer: 5
   m_Name: Healthbar
   m_TagString: Untagged
@@ -11282,6 +11271,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dataObj: {fileID: 11400000, guid: d31a5f5ba7000d749b0026d43085bc23, type: 2}
+--- !u!114 &442855554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442855547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!1001 &446235071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11504,7 +11508,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: d006bc8b738bd4418833d0886656a892, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.602
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -16519,7 +16523,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerExitMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -16531,7 +16535,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 442855553}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -16570,7 +16574,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: SimpleImageBehaviour, Assembly-CSharp
+      value: Death, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
@@ -17977,7 +17981,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerExitMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -17989,7 +17993,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 442855553}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -18028,7 +18032,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: SimpleImageBehaviour, Assembly-CSharp
+      value: Death, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
@@ -18378,7 +18382,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerExitMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -18390,7 +18394,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 442855553}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -18433,7 +18437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: SimpleImageBehaviour, Assembly-CSharp
+      value: Death, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
@@ -18725,8 +18729,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 442855551}
-        m_TargetAssemblyTypeName: SimpleImageBehaviour, Assembly-CSharp
+      - m_Target: {fileID: 442855553}
+        m_TargetAssemblyTypeName: Death, Assembly-CSharp
         m_MethodName: UpdateWithFloatData
         m_Mode: 1
         m_Arguments:
@@ -19014,7 +19018,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerExitMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -19026,7 +19030,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 442855553}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -19065,7 +19069,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: SimpleImageBehaviour, Assembly-CSharp
+      value: Death, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
@@ -24277,7 +24281,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerExitMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -24289,7 +24293,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 442855553}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -24328,7 +24332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: SimpleImageBehaviour, Assembly-CSharp
+      value: Death, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
@@ -24923,7 +24927,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerExitMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -24935,7 +24939,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 442855553}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -24974,7 +24978,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: SimpleImageBehaviour, Assembly-CSharp
+      value: Death, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
@@ -25092,7 +25096,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerExitMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -25104,7 +25108,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 442855553}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -25143,7 +25147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: SimpleImageBehaviour, Assembly-CSharp
+      value: Death, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
@@ -25371,7 +25375,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerExitMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -25383,7 +25387,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 442855553}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -25422,7 +25426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: SimpleImageBehaviour, Assembly-CSharp
+      value: Death, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
@@ -25541,7 +25545,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerExitMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -25553,7 +25557,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 442855553}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -25592,7 +25596,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: SimpleImageBehaviour, Assembly-CSharp
+      value: Death, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
@@ -25908,7 +25912,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerExitMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -25920,7 +25924,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 442855553}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -25959,7 +25963,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: SimpleImageBehaviour, Assembly-CSharp
+      value: Death, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
@@ -26204,8 +26208,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 442855551}
-        m_TargetAssemblyTypeName: SimpleImageBehaviour, Assembly-CSharp
+      - m_Target: {fileID: 442855553}
+        m_TargetAssemblyTypeName: Death, Assembly-CSharp
         m_MethodName: UpdateWithFloatData
         m_Mode: 1
         m_Arguments:
@@ -26413,7 +26417,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerExitMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -26425,7 +26429,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 442855553}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -26464,7 +26468,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: SimpleImageBehaviour, Assembly-CSharp
+      value: Death, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
@@ -26920,7 +26924,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerExitMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -26932,7 +26936,7 @@ PrefabInstance:
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 442855551}
+      objectReference: {fileID: 442855553}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -26967,7 +26971,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: SimpleImageBehaviour, Assembly-CSharp
+      value: Death, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5507813952560404968, guid: 5f6a6177fa83aef47bf6a3a857151ac4, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
@@ -27637,8 +27641,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 442855551}
-        m_TargetAssemblyTypeName: SimpleImageBehaviour, Assembly-CSharp
+      - m_Target: {fileID: 442855553}
+        m_TargetAssemblyTypeName: Death, Assembly-CSharp
         m_MethodName: UpdateWithFloatData
         m_Mode: 1
         m_Arguments:
